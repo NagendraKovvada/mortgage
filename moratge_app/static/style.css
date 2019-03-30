@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 250px;
+}
+.logo {
+  text-align: right;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+
+.heavyTable {
+  text-align: center;
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #ed1c40;
+  width: 500px;
+  margin: 50px auto;
+  border-radius: .25rem;
+}
+
+.heavyTable thead {
+  background: #ed1c40;
+  color: #fff;
+  border: none;
+}
+
+.heavyTable th:first-child,tr:first-child,
+.heavyTable td:first-child {
+  padding: 0 15px 0 20px;
+}
+
+ th {
+  font-weight: 500;
+}
+
+ thead tr:last-child th {
+  border-bottom: 3px solid #ddd;
+}
+
+ tbody tr:hover {
+  background-color: #f2f2f2;
+  cursor: default;
+  border: 1;
+}
+
+ tbody tr:last-child td {
+  border: 1;
+}
+
+ tbody td {
+  border: 1;
+  /*border-bottom: 1px solid #ddd;*/
+}
+
+ td:last-child {
+  text-align: left;
+  padding-right: 10px;
+}
+
+.footer {
+
+   position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1em
+}
+.tfooter{
+  table-layout: auto;
+  padding: 20px;
+  border-spacing: 10px;
+}
+.tfooter span {
+  padding: 20px;
+  text-align: center;
+  transform-origin: 0 50%;
+  transform: rotate(-90.0deg); 
+  white-space: nowrap; 
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+}

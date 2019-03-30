@@ -1,0 +1,85 @@
+<html>
+{% load static from staticfiles %}
+<head>
+	<title>Surya Software</title>
+	<link rel = "stylesheet" type = "text/css" href = "{% static 'style.css' %}">
+	<script src="{% static 'clientexpenses/app.js' %}"></script>
+</head>
+<body>
+	<div class="logo">
+  <img src="{% static 'mortgage.jpg'%}">
+</div>
+	
+	
+	
+<div class='main'>
+
+    <section class="content">
+    </section>
+    <div class="menu"></div>
+    <table class="heavyTable" border="1">
+      <thead>
+        <tr><th colspan="6" align="center">Loan Details</th></tr>
+			
+        <tr>
+			<th>Name</th>	
+			<th>Loan Type</th>			
+			<th>Amount</th>
+			<th>Description</th>
+			<th>DateTime</th>
+			<th>Status</th>
+		</tr>
+		</thead>
+		{% for loan in form %}
+		<tbody>			
+			    <tr>
+			    	<td>{{loan.client}}</td>
+			    	<td>{{loan.Loan_type}}</td>
+				    <td>{{loan.amount}}</td>
+				    <td>{{loan.description}}</td>
+				    <td>{{loan.loan_timestamp|date:'Y-m-d'}}</td>
+				    <td>{{loan.status}}</td>
+				    
+			  </tr>			
+		</tbody>
+		{% endfor %}
+  	</table>
+	</section>
+</div>
+<div class="footer">
+	<table class="tfooter" cellspacing="30px">
+		<tr rowspan="5">
+			<td ><span>PRODUCTS</span></td>
+		</tr>
+		<tr>
+			<td>Home Loans</td>
+		</tr>
+		<tr>
+			<td>Personal Loans</td>
+		</tr>
+		<tr>
+			<td>Business Loan</td>
+		</tr>
+		<tr>
+			<td>Commercial Purchase</td>
+		</tr>
+		<tr>	  
+			<td>Commercial Purchase</td>
+		</tr>
+		<tr>
+			<td>loan Against property</td>
+			<td>office: 0226198888</td>
+			<td>connect@mortgageworld.in</td>
+		</tr>
+		<tr>
+			<td>Lease Rent Discounting</td>
+			<td>Toll Free: 18002100100</td>
+			<td>www.mortgageworld.in</td>
+		</tr>
+	</table>
+	  
+	</div>
+</div>
+
+</body>
+

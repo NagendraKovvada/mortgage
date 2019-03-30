@@ -1,0 +1,33 @@
+<html>
+{% load static %}
+<head>
+	<title>Surya Software</title>
+	<link rel = "stylesheet" type = "text/css" href = "{% static 'style.css' %}">
+		
+</head>
+<body>
+
+<div class='main'>
+    <section class="content">
+      <h1><center>Mortage Software</center></h1>
+      <p><center>
+        Assignment for Surya Software</center>
+      </p>
+    </section>
+    <table class="heavyTable">
+      <thead>
+        <tr>
+          <th>Clients</th>
+         </tr>
+      </thead>
+      <tbody>
+	{% for client in form %}
+    <tr>
+    	<td><a href="">{{ client }}</td></a>
+    </tr>
+	{% endfor %}
+    </tbody>
+  	</table>
+	</section>
+</div>
+</body>
