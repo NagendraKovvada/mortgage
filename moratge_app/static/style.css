@@ -6,9 +6,16 @@
 img{
   width: 250px;
 }
+
 .logo {
-  text-align: right;
+  right:0;
+  position: fixed;
 }
+.main{
+  top:50%;
+  position: relative;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #333;
@@ -20,7 +27,7 @@ body {
   border-collapse: separate;
   border-spacing: 0;
   border: 2px solid #ed1c40;
-  width: 500px;
+  width: 600px;
   margin: 50px auto;
   border-radius: .25rem;
 }
@@ -66,7 +73,7 @@ body {
 
 .footer {
 
-   position: fixed;
+  position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
